@@ -1,7 +1,7 @@
 {
-  "name": "cue",
+  "name": "css-reload",
   "version": "1.0.0",
-  "main": "cue.js",
+  "main": "css-reload.js",
   "repository": "git@github.com:conan/css-reload.git",
   "author": "Conan <conan@cervest.earth>",
   "license": "UNLICENSED",
@@ -14,11 +14,7 @@
   "dependencies": {
     "@babel/runtime": "~7.7.2",
     "create-react-class": "15.6.3",
-    "material-components-web": "~3.1.0",
     "react": "16.8.6",
-    "react-dates": "~21.4.0",
-    "react-dom": "16.8.6",
-    "react-flip-move": "3.0.3",
-    "react-highlight.js": "1.0.7"
+    "react-dom": "16.8.6"
   }
 }

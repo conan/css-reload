@@ -2,6 +2,10 @@
 
 A small repro project for a problem with hot-reloading CSS.
 
+Install npm deps:
+
+    npm install
+
 Run the web server:
 
     lein repl
@@ -10,6 +14,11 @@ Run the web server:
 Run shadow-cljs:
 
     npx shadow-cljs watch app
+
+To run from Cursive, create a local Clojure REPL run configuration that uses clojure.main and set the Parameters field 
+to be:
+ 
+    dev/clj/cursive.clj
 
 Run SASS:
 
