@@ -1,0 +1,14 @@
+{:lein {:profile "+dev"}
+ :builds
+ {:app {:target :browser
+        :output-dir "resources/public/js/compiled/"
+        :asset-path "/js/compiled"
+        :compiler-options {:infer-externs :auto}
+        :dev {:compiler-options {:external-config {:devtools/config {:features-to-install :all}}}
+              :devtools {:after-load user/after-load
+                         :watch-dir "resources/public/"}
+              :log {:level :debug}
+              :print-input-delimiter true}
+        :release {:compiler-options {:closure-defines {goog.DEBUG false}
+                                     :optimizations :advanced}}
+        :modules {:css-reload {:entries [css-reload.core]}}}}}
