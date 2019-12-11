@@ -24,5 +24,7 @@ Run SASS:
 
     npx node-sass resources/sass -wo resources/public/css/compiled --importer node_modules/node-sass-import
 
+You'll need to change an SCSS file to trigger the first compilation.
+
 [shadow-cljs.edn](shadow-cljs.edn) contains `:watch-dir` set to `resoures/public`, but when CSS is compiled to 
 `resources/public/css/compiled/css-reload.css` it isn't hot-reloaded.  
